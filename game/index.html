@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock, Paper, Scissors</h1>
+        <div class="game">
+            <div class="choices">
+                <img src="images/rock.png" alt="Rock" class="choice" data-choice="rock">
+                <img src="images/paper.png" alt="Paper" class="choice" data-choice="paper">
+                <img src="images/scissors.png" alt="Scissors" class="choice" data-choice="scissors">
+            </div>
+            <div class="boards">
+                <div class="board" id="player-board">
+                    <h2>Player Choice</h2>
+                    <img src="images/placeholder.png" alt="Player Choice" id="player-choice-img">
+                </div>
+                <div class="board" id="computer-board">
+                    <h2>Computer Choice</h2>
+                    <img src="images/placeholder.png" alt="Computer Choice" id="computer-choice-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="result-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p id="result-message"></p>
+            <p id="result-emoji"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
